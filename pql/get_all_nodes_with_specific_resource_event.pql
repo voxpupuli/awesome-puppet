@@ -1,0 +1,1 @@
+puppet query 'events[certname] {resource_type = "Service" and resource_title = "apache2" and latest_report? = true and corrective_change = true}'
