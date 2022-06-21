@@ -1,0 +1,1 @@
+inventory[certname] {facts.aio_agent_version ~ "\\d+" and ! resources { type = "Package" and title = "foo"}}
