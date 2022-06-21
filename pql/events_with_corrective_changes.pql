@@ -1,0 +1,2 @@
+# Find all certnames with an event that has the puppet agent with correct changes in noop mode
+events[certname] { status = "noop" and containing_class = "Puppet_agent"}
