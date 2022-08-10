@@ -1,0 +1,1 @@
+reports[certname,status,catalog_uuid,receive_time,start_time,end_time,noop,noop_pending,environment,configuration_version,metrics] { latest_report? = true }

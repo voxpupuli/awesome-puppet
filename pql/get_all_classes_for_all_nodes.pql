@@ -1,0 +1,7 @@
+resources [certname,title]{ type = 'Class' and nodes { deactivated is null and expired is null} order by certname }
+
+# Example of structuring the results into a Hash of classes per certname:
+# 
+#   puppet-query  "resources [certname,title]{ type = 'Class' and nodes { deactivated is null and expired is null} order by certname }" \
+#      | ruby -r json -e "j=JSON.parse(STDIN.read); h = {}; j.each{|x| h[x['certname']]||= []; h[x['certname']] << x['title'] }; puts JSON.pretty_generate(h)"
+#
